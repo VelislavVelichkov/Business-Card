@@ -1,0 +1,155 @@
+body {
+    background-image: url('../images/code.jpg');
+    background-size: cover;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 600px;
+    height: 320px;
+    background: #023e4b;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotate(0deg) translateZ(1px);
+}
+
+.container:hover .card,
+.back {
+    transform: rotateY(-180deg) translateZ(1px);
+}
+
+.front {
+    line-height: 320px;
+    text-align: center;
+}
+
+.front-name {
+    outline: 1px solid #f9991c;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 50px;
+    letter-spacing: 7px;
+    color: white;
+}
+
+.back-side {
+    display: flex;
+    background: #023e4b;
+}
+
+.back-name {
+    color: white;
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+.mini-title {
+    color: white;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+.back-body {
+    display: flex;
+    margin-right: 10px;
+}
+
+.person-details {
+    flex: 1;
+}
+
+.person-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+
+.person-details-list {
+    list-style-type: none;
+}
+
+.person-details-list li {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.143rem;
+}
+
+.person-details-list li a {
+    text-decoration: none;
+    color: #f9991c;
+    font-style: italic;
+}
+
+.person-details-list li span {
+    display: inline-block;
+    width: 16px;
+    margin-right: 4px;
+    text-align: center;
+}
+
+.social-media {
+    margin-left: 40px;
+}
+.fa {
+    padding: 12px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 50%;
+  }
+
+.footer {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-top: 1px solid #f9991c;
+    padding-top: 10px;
+}
+
+.footer p {
+    font-size: 1.143rem;
+    color: white;
+}
+.first-social {
+    margin-left: 10px;
+}
+.second-social {
+    margin-left: 10px;
+}
+.second-social a img {
+    display: block;
+    width: 43px;
+    height: auto;
+    margin-top: 5px;
+}
